@@ -1,0 +1,106 @@
+:root {
+  --fondo: #fefbf8;
+  --beige: #dcc39b;
+  --marron: #5a4a3f;
+  --texto: #3e3e3e;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo global */
+#inicio, #vistaPrincipal, #detalleReceta {
+  background-color: var(--fondo);
+}
+
+/* Pantalla de inicio */
+.texto-logo {
+  color: var(--marron);
+  font-size: 2.4rem;
+}
+.btn-inicio {
+  background-color: var(--beige);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.btn-inicio:hover {
+  background-color: #c9b184;
+}
+
+/* Botones principales */
+.btn-buscar {
+  background-color: var(--marron);
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+.btn-buscar:hover {
+  background-color: #4b3e35;
+}
+.btn-outline-buscar {
+  border: 1px solid var(--marron);
+  color: var(--marron);
+  transition: 0.3s;
+}
+.btn-outline-buscar:hover {
+  background-color: var(--marron);
+  color: #fff;
+}
+
+/* Tarjetas de recetas */
+.tarjeta-receta {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.tarjeta-receta:hover {
+  transform: scale(1.02);
+}
+.imagen-receta {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.info-receta {
+  padding: 15px;
+}
+.info-receta h5 {
+  color: var(--marron);
+  font-weight: 600;
+}
+
+/* Vista detalle */
+#detalleReceta {
+  background-color: var(--fondo);
+  color: var(--texto);
+  border-radius: 10px;
+}
+.imagen-plato {
+  width: 50%;
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.boton-volver {
+  background-color: var(--marron);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  transition: 0.3s;
+}
+.boton-volver:hover {
+  background-color: #4b3e35;
+}
+
